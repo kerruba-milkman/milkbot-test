@@ -1,0 +1,13 @@
+FROM 263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/node:12.14.1-alpine as intermediate
+
+RUN apk --no-cache add curl
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm i
+
+COPY . .
+
+ENTRYPOINT ./.ci/runTest.sh

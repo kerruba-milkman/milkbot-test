@@ -1,0 +1,12 @@
+{
+  "Type": "Notification",
+  "MessageId": "ef07f3f3-b23e-55de-9eb6-abc628d2155b",
+  "TopicArn": "arn:aws:sns:eu-central-1:263652615682:MilkbotProdNotificationSystem",
+  "Subject": "ALARM: \"DeadLettersPosteProdDlqAlarm\" in EU (Frankfurt)",
+  "Message": "{\"AlarmName\":\"DeadLettersPosteProdDlqAlarm\",\"AlarmDescription\":\"dead-letters-poste\",\"AWSAccountId\":\"263652615682\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (23/11/20 11:09:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2020-11-23T11:10:36.371+0000\",\"Region\":\"EU (Frankfurt)\",\"AlarmArn\":\"arn:aws:cloudwatch:eu-central-1:263652615682:alarm:DeadLettersPosteProdDlqAlarm\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"ApproximateNumberOfMessagesVisible\",\"Namespace\":\"AWS/SQS\",\"StatisticType\":\"Statistic\",\"Statistic\":\"MINIMUM\",\"Unit\":null,\"Dimensions\":[{\"value\":\"dead-letters-poste\",\"name\":\"QueueName\"}],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanThreshold\",\"Threshold\":0.0,\"TreatMissingData\":\"- TreatMissingData:                    ignore\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+  "Timestamp": "2020-11-23T11:10:36.419Z",
+  "SignatureVersion": "1",
+  "Signature": "aqSesQl2TMmytB2ZGNg8GEfoZQz+ZhypTFdFtqKkxLPC/pEoHNiXe8OfAzfybHIvAOxV6VM6QsaglggMp+yIilb5+9DBonkbRE4S8C2mjDm/oNdzTN9tfqtKrUKjzS7AYj89ZLXAge60LF9t/j3Qii2x+KUXw8qUr29SzlSBgj90iNMmyi62UUPSplfJztxV6o/6Q6fpu7tX44owtKjct3gFYEyo1t+wUGuklcg+eQYHLm4ACjkfA9rDkP29tqSIGe85+9mwV4EUg79ks+eCsE1CsHSKRljBVwWWPk8XxBVrwUXmU9g84UXrdjGv6Cy7CScH4wVYMs/HpOwlIaPyAA==",
+  "SigningCertURL": "https://sns.eu-central-1.amazonaws.com/SimpleNotificationService-010a507c1833636cd94bdb98bd93083a.pem",
+  "UnsubscribeURL": "https://sns.eu-central-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-central-1:263652615682:MilkbotProdNotificationSystem:54f3c1a1-5077-4dfd-ac2a-866bd75b9c06"
+}

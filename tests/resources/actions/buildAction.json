@@ -1,0 +1,28 @@
+{
+  "expectedResponseType": "chat",
+  "requestChannelId": "GT4R6E7TN",
+  "user": "U01C2SMMR8C",
+  "username": "luca.cherubin",
+  "actions": [
+    {
+      "type": "static_select",
+      "action_id": "build",
+      "block_id": "b3fc7b856&&&EcrTag=kerruba-b3fc7b856",
+      "selected_option": {
+        "text": {
+          "type": "plain_text",
+          "text": "API",
+          "emoji": true
+        },
+        "value": "api-tech"
+      },
+      "placeholder": {
+        "type": "plain_text",
+        "text": "Choose+the+application",
+        "emoji": true
+      },
+      "action_ts": "1606230948.644579"
+    }
+  ],
+  "responseUrl": "https://hooks.slack.com/actions/TNJBGNZ62/1510380487831/DkN1tQhnHhIKGBrXKsCWZFO2"
+}

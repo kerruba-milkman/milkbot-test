@@ -1,0 +1,26 @@
+{
+  "requestContext": {
+    "elb": {
+      "targetGroupArn": "arn:aws:elasticloadbalancing:eu-central-1:263652615682:targetgroup/lambda-rxr5q10fBO0lA36KtpkX/53a345668dfe8043"
+    }
+  },
+  "httpMethod": "POST",
+  "path": "/enqueue-message",
+  "queryStringParameters": {},
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip,deflate",
+    "content-length": "815",
+    "content-type": "application/json",
+    "host": "milkbot.dev.milkman.it",
+    "user-agent": "Slackbot 1.0 (+https://api.slack.com/robots)",
+    "x-amzn-trace-id": "Root=1-5fbd09cd-2f5e381a1cadfd9c17cac10b",
+    "x-forwarded-for": "54.91.16.124",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-slack-request-timestamp": "1606224332",
+    "x-slack-signature": "v0=e6a49275885458991ccc291967fe0a35882a5cf25096fa5b479a23829354e81a"
+  },
+  "body": "{\"token\":\"XGt04MDOP2IXmmAIBAfx5GpX\",\"team_id\":\"TNJBGNZ62\",\"api_app_id\":\"AT9FYGF0E\",\"event\":{\"client_msg_id\":\"00ed2a4f-092e-4682-83a1-d2e4e9127f1d\",\"type\":\"app_mention\",\"text\":\"<@UT9DDPLVB>\\u00a0search-logs --time 2020-10-11T21:44:20.143+02:00 5f836094-7297-4020-a975-72aaa6221d23\",\"user\":\"U01C2SMMR8C\",\"ts\":\"1606224331.000400\",\"team\":\"TNJBGNZ62\",\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"xGCY\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"user\",\"user_id\":\"UT9DDPLVB\"},{\"type\":\"text\",\"text\":\"\\u00a0search-logs --time 2020-10-11T21:44:20.143+02:00 5f836094-7297-4020-a975-72aaa6221d23\"}]}]}],\"channel\":\"GT4R6E7TN\",\"event_ts\":\"1606224331.000400\"},\"type\":\"event_callback\",\"event_id\":\"Ev01FEP3QLKU\",\"event_time\":1606224331,\"authed_users\":[\"UT9DDPLVB\"],\"event_context\":\"1-app_mention-TNJBGNZ62-GT4R6E7TN\"}",
+  "isBase64Encoded": false
+}

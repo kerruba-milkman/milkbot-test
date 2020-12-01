@@ -1,0 +1,26 @@
+{
+  "requestContext": {
+    "elb": {
+      "targetGroupArn": "arn:aws:elasticloadbalancing:eu-central-1:263652615682:targetgroup/lambda-rxr5q10fBO0lA36KtpkX/53a345668dfe8043"
+    }
+  },
+  "httpMethod": "POST",
+  "path": "/enqueue-message",
+  "queryStringParameters": {},
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip,deflate",
+    "content-length": "644",
+    "content-type": "application/json",
+    "host": "milkbot.dev.milkman.it",
+    "user-agent": "Slackbot 1.0 (+https://api.slack.com/robots)",
+    "x-amzn-trace-id": "Root=1-5fae9ef6-7b608c30306212fa7a3d7ce0",
+    "x-forwarded-for": "54.198.138.148",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-slack-request-timestamp": "1605279477",
+    "x-slack-signature": "v0=4b972e7036fded8476ec69a388034802b94cb08165776980255d5dfcd8e48bff"
+  },
+  "body": "{\"token\":\"XGt04MDOP2IXmmAIBAfx5GpX\",\"team_id\":\"TNJBGNZ62\",\"api_app_id\":\"AT9FYGF0E\",\"event\":{\"client_msg_id\":\"77d9f253-cc47-491a-8739-7402ed1736aa\",\"type\":\"app_mention\",\"text\":\"<@UT9DDPLVB> help\",\"user\":\"U017Z6XVC86\",\"ts\":\"1605279476.001600\",\"team\":\"TNJBGNZ62\",\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"gp4zH\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"user\",\"user_id\":\"UT9DDPLVB\"},{\"type\":\"text\",\"text\":\" help\"}]}]}],\"channel\":\"GT4R6E7TN\",\"event_ts\":\"1605279476.001600\"},\"type\":\"event_callback\",\"event_id\":\"Ev01ELPX58FP\",\"event_time\":1605279476,\"authed_users\":[\"UT9DDPLVB\"],\"event_context\":\"1-app_mention-TNJBGNZ62-GT4R6E7TN\"}",
+  "isBase64Encoded": false
+}

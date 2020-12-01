@@ -1,0 +1,26 @@
+{
+  "requestContext": {
+    "elb": {
+      "targetGroupArn": "arn:aws:elasticloadbalancing:eu-central-1:263652615682:targetgroup/lambda-rxr5q10fBO0lA36KtpkX/53a345668dfe8043"
+    }
+  },
+  "httpMethod": "POST",
+  "path": "/enqueue-message",
+  "queryStringParameters": {},
+  "headers": {
+    "accept": "application/json,*/*",
+    "accept-encoding": "gzip,deflate",
+    "content-length": "4548",
+    "content-type": "application/x-www-form-urlencoded",
+    "host": "milkbot.dev.milkman.it",
+    "user-agent": "Slackbot 1.0 (+https://api.slack.com/robots)",
+    "x-amzn-trace-id": "Root=1-5fbd0aa3-68bbe42f0aab148e621b9abb",
+    "x-forwarded-for": "54.81.207.221",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-slack-request-timestamp": "1606224546",
+    "x-slack-signature": "v0=f28dcd09b7b4e1fc0878ec6515698c2a1c28ba7aa4ca035b472b16c6582d1871"
+  },
+  "body": "{\"type\":\"block_actions\",\"user\":{\"id\":\"U01C2SMMR8C\",\"username\":\"luca.cherubin\",\"name\":\"luca.cherubin\",\"team_id\":\"TNJBGNZ62\"},\"api_app_id\":\"AT9FYGF0E\",\"token\":\"XGt04MDOP2IXmmAIBAfx5GpX\",\"container\":{\"type\":\"message\",\"message_ts\":\"1606224516.000600\",\"channel_id\":\"GT4R6E7TN\",\"is_ephemeral\":false},\"trigger_id\":\"1521706649621.766390781206.da6a7e5bd2a5c6d24715b98d134d0d26\",\"team\":{\"id\":\"TNJBGNZ62\",\"domain\":\"milkmanspa\"},\"channel\":{\"id\":\"GT4R6E7TN\",\"name\":\"privategroup\"},\"message\":{\"bot_id\":\"BSWK1FC3C\",\"type\":\"message\",\"text\":\"Search+Logs\",\"user\":\"UT9DDPLVB\",\"ts\":\"1606224516.000600\",\"team\":\"TNJBGNZ62\",\"blocks\":[{\"type\":\"section\",\"block_id\":\"section567\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Hello,+I'm+going+to+retrieve+log+entries+from+logGroups.nSearch+id:nn5f836094-7297-4020-a975-72aaa6221d23\",\"verbatim\":false},\"accessory\":{\"type\":\"image\",\"image_url\":\"https://i.imgur.com/9WcRBXo.png\",\"alt_text\":\"Log\"}},{\"type\":\"section\",\"block_id\":\"5f836094-7297-4020-a975-72aaa6221d23&&&MilkbotLogTimestamp=1602445460143\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Please+select+the+log+group\",\"verbatim\":false},\"accessory\":{\"type\":\"multi_static_select\",\"action_id\":\"search_logs\",\"placeholder\":{\"type\":\"plain_text\",\"text\":\"Select+log+group\",\"emoji\":true},\"options\":[{\"text\":{\"type\":\"plain_text\",\"text\":\"Tracking+-+DEV\",\"emoji\":true},\"value\":\"/ecs/tracking-dev\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"Dashboard+-+DEV\",\"emoji\":true},\"value\":\"/ecs/dashboard-dev\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"Core+API+-+DEV\",\"emoji\":true},\"value\":\"/ecs/api-dev-api\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"Convergence+-+DEV\",\"emoji\":true},\"value\":\"/ecs/convergence-dev\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"Core+API+-+PROD\",\"emoji\":true},\"value\":\"/ecs/api-prod-api\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"WSPoste+-+PROD\",\"emoji\":true},\"value\":\"/ecs/ws-poste-prod\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"Routing+-+DEV\",\"emoji\":true},\"value\":\"/ecs/routing-dev\"},{\"text\":{\"type\":\"plain_text\",\"text\":\"Routing+-+PROD\",\"emoji\":true},\"value\":\"/ecs/routing-prod\"}]}},{\"type\":\"section\",\"block_id\":\"wait_section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Logs+search+can+take+a+while.+Please+wait+for+update+messages!\",\"verbatim\":false}}]},\"state\":{\"values\":{\"5f836094-7297-4020-a975-72aaa6221d23&&&MilkbotLogTimestamp=1602445460143\":{\"search_logs\":{\"type\":\"multi_static_select\",\"selected_options\":{\"text\":{\"type\":\"plain_text\",\"text\":\"Core+API+-+PROD\",\"emoji\":true},\"value\":\"/ecs/api-prod-api\"}}}}},\"response_url\":\"https://hooks.slack.com/actions/TNJBGNZ62/1548636906400/flm3oNlugLs5SJR5i5Q6PhFt\",\"actions\":{\"type\":\"multi_static_select\",\"action_id\":\"search_logs\",\"block_id\":\"5f836094-7297-4020-a975-72aaa6221d23&&&MilkbotLogTimestamp=1602445460143\",\"selected_options\":{\"text\":{\"type\":\"plain_text\",\"text\":\"Core+API+-+PROD\",\"emoji\":true},\"value\":\"/ecs/api-prod-api\"},\"placeholder\":{\"type\":\"plain_text\",\"text\":\"Select+log+group\",\"emoji\":true},\"action_ts\":\"1606224546.483727\"}}",
+  "isBase64Encoded": false
+}

@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "user-agent": "Milkman-GitHub-support"
+  },
+  "body": "{\n    \"action\": \"check-build-status\",\n    \"github\": {\n      \"repo\": \"playground\",\n      \"owner\": \"milkman-deliveries\",\n      \"sha\": \"my-sha\"\n    },\n    \"build\": {\n \"buildId\":\"playground:06b2af77-51f0-4761-81f0-45a20ef03e9e\",\n  \"projectName\":\"playground\"\n}\n  }"
+}

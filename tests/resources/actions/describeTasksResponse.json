@@ -1,0 +1,2853 @@
+{
+    "tasks": [
+    {
+        "attachments": [
+            {
+                "id": "c200247f-a1f4-401a-a52a-0c38d4ebe9d5",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-06a6a645b649163f1"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:dc:a7:6a:a4:d4"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-153-129.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.153.129"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-23T09:46:34.191Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/0b4a33e0-ea64-4f06-a90a-53da336537c6",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/0277cd060c24443793b57fb070aae27c",
+                "name": "milkbot",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/milkbot:prod",
+                "imageDigest": "sha256:b36075e6d9df1b0f537069a28b481ff17683d978fd0f0136754fabe10e06937e",
+                "runtimeId": "06d81d71625ef9a34007317b310b672949cdfdf95870cae08307ea0ca9657ef1",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "c200247f-a1f4-401a-a52a-0c38d4ebe9d5",
+                        "privateIpv4Address": "172.30.153.129"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "512",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "512",
+        "createdAt": "2020-11-23T09:46:21.837Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:milkbot-prod-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "milkbot"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-23T09:46:43.874Z",
+        "pullStoppedAt": "2020-11-23T09:46:52.874Z",
+        "startedAt": "2020-11-23T09:47:07.679Z",
+        "startedBy": "ecs-svc/9547216257864309675",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/0277cd060c24443793b57fb070aae27c",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/milkbot-prod:8",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "39672f61-399c-4524-a4c1-b322d41355c4",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0f8b6eaf216c0344d"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:63:86:84:bc:74"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-139-127.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.139.127"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-03T17:51:30.170Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/3eeb99c0-3936-42a2-9f83-3d1ddbca89c9",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/07a04fee117349d78a5b300e4b97a323",
+                "name": "ws-poste",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/ws-poste:prod",
+                "imageDigest": "sha256:14cbce60034a3c24abc44e6ad62aecfa61d8ed9e96e50f169b04331d1392800b",
+                "runtimeId": "b2756f8b057c4fbfc483c6bf3f35aabbad63d113fc623838ac791d6881e9bc68",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "39672f61-399c-4524-a4c1-b322d41355c4",
+                        "privateIpv4Address": "172.30.139.127"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "512",
+                "memoryReservation": "1024"
+            }
+        ],
+        "cpu": "512",
+        "createdAt": "2020-11-03T17:51:16.008Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:ws-poste-prod-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "1024",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "ws-poste"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-03T17:51:35.284Z",
+        "pullStoppedAt": "2020-11-03T17:51:44.284Z",
+        "startedAt": "2020-11-03T17:51:49.284Z",
+        "startedBy": "ecs-svc/3071972469755637256",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/07a04fee117349d78a5b300e4b97a323",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/ws-poste-prod:1",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "80b228b0-3bac-43a5-834a-df1fe150c2f1",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0919bbe39d674ade7"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:02:ef:fb:f5:ba"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-192-91.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.192.91"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-19T11:31:21.986Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/45df59c3-3440-48d0-ad7e-9134c3e6fba3",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/0c2bbb3022e246318e6b6c575169355a",
+                "name": "tracking",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/web-app:stable",
+                "imageDigest": "sha256:d7fd757b6dbb481eb1cb40d084c81b0cbc7e57ff841fbe39b14b55eb40c49428",
+                "runtimeId": "6449d8bfd249e79ea9b3c088af598f7814a5537aa07cf2b0b790e3eeecc7e78e",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "80b228b0-3bac-43a5-834a-df1fe150c2f1",
+                        "privateIpv4Address": "172.30.192.91"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "256",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-11-19T11:31:09.286Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:tracking-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "512",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "tracking"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-19T11:31:33.706Z",
+        "pullStoppedAt": "2020-11-19T11:31:37.706Z",
+        "startedAt": "2020-11-19T11:31:47.369Z",
+        "startedBy": "ecs-svc/4987159152160582039",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/0c2bbb3022e246318e6b6c575169355a",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/tracking-prod:2",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "017674f4-fe5e-4aba-aadd-94a70a671873",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-04a5d587cc34a5e9f"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:33:95:1e:3b:2e"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-211-18.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.211.18"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-06T09:42:29.499Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/20b73f4a-27ad-438f-9264-6a79f337f499",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/13ca691207f74935b1198d53f403b95d",
+                "name": "resi-poste",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/resi-poste:prod",
+                "imageDigest": "sha256:6b9da36f8d7c7c755cb25ea7a92816957976ea63e3b4623bf51fc4590bfe86af",
+                "runtimeId": "1334fba46395fefe40124bd6222813f79e5c92b23075b459c910896d949708dc",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "017674f4-fe5e-4aba-aadd-94a70a671873",
+                        "privateIpv4Address": "172.30.211.18"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-11-06T09:42:19.993Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:resi-poste-prod-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "resi-poste"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-06T09:42:37.259Z",
+        "pullStoppedAt": "2020-11-06T09:42:48.259Z",
+        "startedAt": "2020-11-06T09:43:04.061Z",
+        "startedBy": "ecs-svc/8433526553111122314",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/13ca691207f74935b1198d53f403b95d",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/resi-poste-prod:2",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "9bb096f7-5eee-4dda-b384-71ee0cb26f30",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0fd1e66ebbe45b1a0"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:e2:87:43:a3:b4"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-223-180.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.223.180"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-09T09:14:42.193Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/c551be98-e686-46bc-8dc7-460c6b54871a",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/2fdea88cd7064386ae93bd5e3da417e6",
+                "name": "peer",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/transactor:prod-log",
+                "imageDigest": "sha256:5256f322341e18ed3a209493686da32fc17f34828b373c7fd7ce232f8b46f3db",
+                "runtimeId": "3c3fcad3335582c495300a6f0b4128a306496158b57c849de6d18aa676dc9eab",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "9bb096f7-5eee-4dda-b384-71ee0cb26f30",
+                        "privateIpv4Address": "172.30.223.180"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "4096",
+                "memoryReservation": "12288"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-09T09:14:33.992Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:peer-server-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "peer"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-09T09:14:45.986Z",
+        "pullStoppedAt": "2020-11-09T09:14:59.986Z",
+        "startedAt": "2020-11-09T09:15:06.986Z",
+        "startedBy": "ecs-svc/4982713045771924778",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/2fdea88cd7064386ae93bd5e3da417e6",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/peer-server-prod:9",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "da870684-d52a-4c13-8d17-32284b8658b0",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-088f336c0938479f7"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:10:28:02:42:20"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-163-229.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.163.229"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-20T16:31:53.051Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/0a2d9304-2393-4442-9f7f-a15628893a17",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/369937d7e4bf4fafa2f2ad0ff7cefa1b",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "181dc97c5cbcbb458d4587cb72c2d502901dcca0257c0c86893d7cf9c6032665",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "da870684-d52a-4c13-8d17-32284b8658b0",
+                        "privateIpv4Address": "172.30.163.229"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/e4e40f72-94c2-4d4f-bd08-ad0e1f866b50",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/369937d7e4bf4fafa2f2ad0ff7cefa1b",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "255100ba16c34670c166ffc26b64fb4b7df834dc87cba4239a51bca4d97b3a11",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "da870684-d52a-4c13-8d17-32284b8658b0",
+                        "privateIpv4Address": "172.30.163.229"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/ec73cc95-2a23-4b15-a113-ef0a2048ed88",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/369937d7e4bf4fafa2f2ad0ff7cefa1b",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "89e6d396076f663d4fb5123462e5ab15c3dd68d6b7cbc432342fdd3b938604ef",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "da870684-d52a-4c13-8d17-32284b8658b0",
+                        "privateIpv4Address": "172.30.163.229"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-20T16:31:43.233Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-cron-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-20T16:32:01.597Z",
+        "pullStoppedAt": "2020-11-20T16:32:28.597Z",
+        "startedAt": "2020-11-20T16:32:42.217Z",
+        "startedBy": "ecs-svc/4715799396731396900",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/369937d7e4bf4fafa2f2ad0ff7cefa1b",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-cron-prod:6",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "62d4e0a8-9619-4a4b-84b6-9d2bb1fc0901",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-02130e0c93114c47b"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:8c:8e:f0:f8:c4"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-139-170.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.139.170"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-09-16T13:00:36.040Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/cf8a93c9-f5fb-47c0-b830-e616de5076df",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/46451a06dd774e4aaa9ba7f5cd7f61fe",
+                "name": "app",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/driving-time-discovery:prod",
+                "imageDigest": "sha256:41d6727dcdfc19c0c5b867c9a419d851ae1c5d6505dd93d2be5effdda51b5a0a",
+                "runtimeId": "dfc8b8e32e959ea08f2d5bea73d853b187bbb576420994d58f5bbbf224ad84a3",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "62d4e0a8-9619-4a4b-84b6-9d2bb1fc0901",
+                        "privateIpv4Address": "172.30.139.170"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-09-16T13:00:27.436Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:driving-time-discovery",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "app"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-09-16T13:00:45.455Z",
+        "pullStoppedAt": "2020-09-16T13:00:49.455Z",
+        "startedAt": "2020-09-16T13:00:51.455Z",
+        "startedBy": "ecs-svc/4390670614909966242",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/46451a06dd774e4aaa9ba7f5cd7f61fe",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/driving-time-discovery:2",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "f49eeb04-1906-4bf3-a790-2d93710f433f",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0420fc77b8ecc2f69"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:e2:11:18:f1:cc"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-218-93.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.218.93"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-11T15:28:44.373Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/7f842ed7-b961-4aca-8d6f-f72607f3faa4",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/51d362241ede4247bbe5ae1be6a5db8f",
+                "name": "libpostal",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/libpostal:prod",
+                "imageDigest": "sha256:e0607eab2e867e8a537b7342fd59d6004d54e298d51da36bf25601ef37f04f5a",
+                "runtimeId": "1bc36e4a29106e27a3a05b30e8603f82e81b62022c771d3df3d34129da59fbc8",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "f49eeb04-1906-4bf3-a790-2d93710f433f",
+                        "privateIpv4Address": "172.30.218.93"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "4096"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-11-11T15:28:34.255Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:libpostal-prod-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "4096",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "libpostal"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-11T15:28:52.059Z",
+        "pullStoppedAt": "2020-11-11T15:30:32.059Z",
+        "startedAt": "2020-11-11T15:30:43.847Z",
+        "startedBy": "ecs-svc/2885516516050484380",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/51d362241ede4247bbe5ae1be6a5db8f",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/libpostal-prod:6",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "3e50810e-2e82-4da0-9dc0-106b0e350a4b",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0ddc4cf1783b98e44"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:61:84:6a:c4:d2"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-164-23.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.164.23"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-19T12:59:10.537Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/d3b9c9e7-1e0c-43ad-b48f-d1f0fe3f0e3a",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5aea7b937b0e4e85acd14bb15062681d",
+                "name": "dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/dashboard:stable",
+                "imageDigest": "sha256:0e8db3f18f5068fef0ca21a1e7ae51d854d4a53e26e37b2fc62aaec7c745b4da",
+                "runtimeId": "302b6d2804e8d7d01c0904b43f2a2498c3c4c224798c16c878dcca6038d0f479",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "3e50810e-2e82-4da0-9dc0-106b0e350a4b",
+                        "privateIpv4Address": "172.30.164.23"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "256",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-11-19T12:59:01.400Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:dashboard-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "512",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "dashboard"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-19T12:59:21.121Z",
+        "pullStoppedAt": "2020-11-19T12:59:24.121Z",
+        "startedAt": "2020-11-19T12:59:34.798Z",
+        "startedBy": "ecs-svc/3243002627855076483",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5aea7b937b0e4e85acd14bb15062681d",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/dashboard-prod:2",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "6f13a8da-55fc-485b-8d33-9b0fd04cbac4",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-09777a1e9873c8f32"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:06:7a:a8:5d:7e"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-155-60.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.155.60"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-20T16:31:51.442Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/58671a4f-2a43-4cbd-8271-9a32609cb3fc",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5f3db729d6c0456fac3f653b55f039b1",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "3ac88c17045eabc28a1e1884b81e1172c88a8bd001fb22ed53b96a1743b3e06f",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "6f13a8da-55fc-485b-8d33-9b0fd04cbac4",
+                        "privateIpv4Address": "172.30.155.60"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/80a592ba-48c6-49ca-b9d5-0247801ff284",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5f3db729d6c0456fac3f653b55f039b1",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "bff71253b42cbeb9adb054a36c733a28c46552d4ad24d518bd430d6bb1bb0495",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "6f13a8da-55fc-485b-8d33-9b0fd04cbac4",
+                        "privateIpv4Address": "172.30.155.60"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/d011b4fd-0613-4312-a6b9-9f492938c7f1",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5f3db729d6c0456fac3f653b55f039b1",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "d8b04d88b2709a78a432fcfd9cdc74e575807873122831fa8bd93adf498397c8",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "6f13a8da-55fc-485b-8d33-9b0fd04cbac4",
+                        "privateIpv4Address": "172.30.155.60"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-20T16:31:43.233Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-cron-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-20T16:32:00.254Z",
+        "pullStoppedAt": "2020-11-20T16:32:28.254Z",
+        "startedAt": "2020-11-20T16:32:42.084Z",
+        "startedBy": "ecs-svc/4715799396731396900",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5f3db729d6c0456fac3f653b55f039b1",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-cron-prod:6",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "bf87106e-16b8-42df-97e4-a8a2e5981193",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0dfa1b5497c0022aa"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:96:d8:2f:68:aa"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-222-178.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.222.178"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-23T12:59:13.316Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/c073e679-7fc3-4e36-b948-8872163a0cdc",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5fc7fee4006d4ab292cbfb68fb3d3077",
+                "name": "milkman-it",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/static-sites:milkman-it",
+                "imageDigest": "sha256:06abb4a53a91aa8d566af997de1c18948964a1bdd66cdeaaafe8076d4f0ba637",
+                "runtimeId": "1d4300e98cbccee7f3e46fbc32b286e59cd685a16c51a6512cff286aff42325c",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "bf87106e-16b8-42df-97e4-a8a2e5981193",
+                        "privateIpv4Address": "172.30.222.178"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "256",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-11-23T12:59:03.755Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:milkman-it",
+        "healthStatus": "UNKNOWN",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "512",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "milkman-it"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-23T12:59:22.928Z",
+        "pullStoppedAt": "2020-11-23T12:59:35.928Z",
+        "startedAt": "2020-11-23T12:59:39.928Z",
+        "startedBy": "ecs-svc/9014763216302577700",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/5fc7fee4006d4ab292cbfb68fb3d3077",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/milkman-it:2",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "7a54865d-7b3c-4e90-bd1d-589a0ba0bbe5",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0f09de7e29b97404b"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:f9:86:da:ca:f0"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-214-184.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.214.184"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-24T13:28:43.801Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/618c7eac-4315-4ceb-8126-ed396c9e8a8c",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/6174b45ff48d48508c362faf5762cb25",
+                "name": "milkman-tech",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/static-sites:milkman-tech",
+                "imageDigest": "sha256:047be364044041bd8f1af1982af901da292f31cde5667cb70b4b1ccca67d3174",
+                "runtimeId": "88d9dd7af20f7dcfa9231a75f28be5d1cd9e7f76cda294797e01a4ea807e4ada",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "7a54865d-7b3c-4e90-bd1d-589a0ba0bbe5",
+                        "privateIpv4Address": "172.30.214.184"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "256",
+                "memoryReservation": "1024"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-11-24T13:28:35.512Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:milkman-tech-site",
+        "healthStatus": "UNKNOWN",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "1024",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "milkman-tech"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-24T13:28:53.962Z",
+        "pullStoppedAt": "2020-11-24T13:29:06.962Z",
+        "startedAt": "2020-11-24T13:29:38.414Z",
+        "startedBy": "ecs-svc/8389522264595019159",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/6174b45ff48d48508c362faf5762cb25",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/milkman-tech-site:4",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "ae1c00f0-0b86-4512-a4b5-9ce7f562473a",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-08480485763249737"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:28:2e:43:4f:3a"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-212-80.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.212.80"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-23T17:21:24.839Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/16411b3d-0fdb-465a-844b-f2c65da46f58",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/66cedad250024d22a0bdcacc0ed72068",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "7357c1549f4fe04f51b22ab8824bdf877fb9f2af194fdc599943263568e62b46",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "ae1c00f0-0b86-4512-a4b5-9ce7f562473a",
+                        "privateIpv4Address": "172.30.212.80"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/cbdac186-b6bf-4706-9295-ee1b40150f1d",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/66cedad250024d22a0bdcacc0ed72068",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "6001aba1c72b5e7e34ff99bdcd8245babd1dc8408f0b847203b30918bf7bfc8b",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "ae1c00f0-0b86-4512-a4b5-9ce7f562473a",
+                        "privateIpv4Address": "172.30.212.80"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/d930e5c2-cabd-4fcf-aed1-d0ada7bf3c8d",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/66cedad250024d22a0bdcacc0ed72068",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "a87ec2e7c411fdb42b8c18a8e3392d45c9c53d24922e4fe44b594246cb63acc0",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "ae1c00f0-0b86-4512-a4b5-9ce7f562473a",
+                        "privateIpv4Address": "172.30.212.80"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-23T17:21:16.283Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-23T17:21:34.807Z",
+        "pullStoppedAt": "2020-11-23T17:22:02.807Z",
+        "startedAt": "2020-11-23T17:22:16.587Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/66cedad250024d22a0bdcacc0ed72068",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "36b29212-d727-4126-80c9-e0e24fdad628",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-07f74d7acc3b10311"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:2e:89:21:f6:b8"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-169-237.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.169.237"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-24T07:48:32.503Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/6b1d3498-30e9-40dc-9ab3-9f88fa3bd31f",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/68e5b72d215a47e6869548a473a3063a",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "e210a7cd29f5a33d520198ac253ee49f833efa9294976ecd505db9f4ea151975",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "36b29212-d727-4126-80c9-e0e24fdad628",
+                        "privateIpv4Address": "172.30.169.237"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/aa53d1a9-6ff4-4b5e-9118-f3698cc0e3e1",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/68e5b72d215a47e6869548a473a3063a",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "0447c9b9292479dfcf3decb3038bfe82329dfbb46f9cf957503852596bf0a042",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "36b29212-d727-4126-80c9-e0e24fdad628",
+                        "privateIpv4Address": "172.30.169.237"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/c47be35f-aa0b-4a49-917e-dd85d6d2a609",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/68e5b72d215a47e6869548a473a3063a",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "91fdaf450f84d06f48860b8ff257a766f0f53397bd60c9881e720f0866020073",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "36b29212-d727-4126-80c9-e0e24fdad628",
+                        "privateIpv4Address": "172.30.169.237"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-24T07:48:21.717Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-24T07:48:42.189Z",
+        "pullStoppedAt": "2020-11-24T07:49:10.189Z",
+        "startedAt": "2020-11-24T07:49:23.864Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/68e5b72d215a47e6869548a473a3063a",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "9f6f1418-088d-4b47-bcd9-25fc483abab9",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0aa3f836540889149"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:5f:13:29:98:54"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-194-150.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.194.150"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-24T00:57:07.817Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/2279e3b8-8919-4f48-a36e-78ab94e974c3",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/6bbb0fad94204c079cce843da1ba0114",
+                "name": "analyticator",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/analyticator:prod",
+                "imageDigest": "sha256:31c2f84a073c276583127df052508575e41f914a1dc820bbd71d05dbd5a15835",
+                "runtimeId": "c5592c13d64a1bce46309d6b0a7bce73d732f4524e3f9dbe71465d259b78dcbb",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "9f6f1418-088d-4b47-bcd9-25fc483abab9",
+                        "privateIpv4Address": "172.30.194.150"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-11-24T00:56:57.126Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:analyticator-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "analyticator"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-24T00:57:23.973Z",
+        "pullStoppedAt": "2020-11-24T00:57:29.973Z",
+        "startedAt": "2020-11-24T00:57:31.973Z",
+        "startedBy": "ecs-svc/8903608864052695736",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/6bbb0fad94204c079cce843da1ba0114",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/analyticator-prod:5",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "499e31c7-250d-496b-bb7c-06ab87494cb8",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-02e24db7aca89e0e6"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:86:c4:9b:62:1a"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-141-226.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.141.226"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-24T07:48:30.416Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/61f6b2df-b44e-44e0-9cee-e52703b92a0f",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/74a56410b4a64c9c83942bd229508c52",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "c1a674476a13b5deb89d243356fc5bd39a795633350849e75057fe916e108dd4",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "499e31c7-250d-496b-bb7c-06ab87494cb8",
+                        "privateIpv4Address": "172.30.141.226"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/73535951-19bb-4292-ae23-1a1b383f81fb",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/74a56410b4a64c9c83942bd229508c52",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "330688f3a9b1939c3a901e8a67d35cf6b915a118695baa4f88d24998ec4d2767",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "499e31c7-250d-496b-bb7c-06ab87494cb8",
+                        "privateIpv4Address": "172.30.141.226"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/f84e3bba-6be8-4209-84ba-4ad145b43d3a",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/74a56410b4a64c9c83942bd229508c52",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "e4881195af48da647c356d064a88a300835ebd8d90558de6294f71a07518045a",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "499e31c7-250d-496b-bb7c-06ab87494cb8",
+                        "privateIpv4Address": "172.30.141.226"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-24T07:48:21.717Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-24T07:48:38.786Z",
+        "pullStoppedAt": "2020-11-24T07:48:59.786Z",
+        "startedAt": "2020-11-24T07:49:19.476Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/74a56410b4a64c9c83942bd229508c52",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "831e26a7-7fdd-40f9-987a-17f8cab5bf2b",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-029b45efd6c55833e"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:0e:bf:3f:16:66"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-144-248.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.144.248"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-23T10:57:15.086Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/85888736-f854-4237-b1c5-fd0536fcf321",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/7c245b1fdb464badb9c208048a655d9c",
+                "name": "global-search-client",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/global-search:prod",
+                "imageDigest": "sha256:b2f044dc1f73d8e8538cddebaa0f14aa8b4722edbc0d7f794e5c951b53e2c538",
+                "runtimeId": "1e85ac2da4ca82ec72cff094564c95f33dc5aed04ebaba48c43d7c466635348e",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "831e26a7-7fdd-40f9-987a-17f8cab5bf2b",
+                        "privateIpv4Address": "172.30.144.248"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/f2c059ee-8a42-4af2-bdc7-185aa5fe7b30",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/7c245b1fdb464badb9c208048a655d9c",
+                "name": "global-search",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/global-search:prod",
+                "imageDigest": "sha256:b2f044dc1f73d8e8538cddebaa0f14aa8b4722edbc0d7f794e5c951b53e2c538",
+                "runtimeId": "e68e37d69317e927e83124984e2cf94c89da616ffc29438b84d9734c18e521c5",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "831e26a7-7fdd-40f9-987a-17f8cab5bf2b",
+                        "privateIpv4Address": "172.30.144.248"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "2048",
+        "createdAt": "2020-11-23T10:57:00.648Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:global-search-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "4096",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "global-search-client"
+                },
+                {
+                    "name": "global-search"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-23T10:57:23.005Z",
+        "pullStoppedAt": "2020-11-23T10:57:39.005Z",
+        "startedAt": "2020-11-23T10:57:58.675Z",
+        "startedBy": "ecs-svc/1187321330953068363",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/7c245b1fdb464badb9c208048a655d9c",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/global-search-prod:4",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "a89d31d5-2ab7-4b60-823c-dfaffaeb39f0",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-00ce31175c238126e"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:af:51:d3:0a:d8"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-183-200.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.183.200"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-10T13:43:21.722Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/a5a542b2-0801-4090-843e-af6b0411a499",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/a60d9b44439c4b0eaeee7d8e7853801a",
+                "name": "peer",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/transactor:prod-log",
+                "imageDigest": "sha256:5256f322341e18ed3a209493686da32fc17f34828b373c7fd7ce232f8b46f3db",
+                "runtimeId": "f67cc444d823b34284650918596be0ac680dbaa2913ca86f52f6629f57f6d068",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "a89d31d5-2ab7-4b60-823c-dfaffaeb39f0",
+                        "privateIpv4Address": "172.30.183.200"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "4096",
+                "memoryReservation": "12288"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-10T13:43:07.910Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:peer-server-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "peer"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-10T13:43:30.849Z",
+        "pullStoppedAt": "2020-11-10T13:43:47.849Z",
+        "startedAt": "2020-11-10T13:43:58.849Z",
+        "startedBy": "ecs-svc/4982713045771924778",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/a60d9b44439c4b0eaeee7d8e7853801a",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/peer-server-prod:9",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "7c83e1a9-7a1c-482c-a45c-05c44f6734c8",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-07a2edbe1ecef1a6f"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:ff:f1:40:ca:7c"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-222-105.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.222.105"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-10-09T19:50:45.373Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/d3e63514-7310-4217-914b-b5601862afbc",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/af9f8ddb60f843379320688fb54c70d8",
+                "name": "shortener",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/milkman-url-shortener:prod",
+                "imageDigest": "sha256:76db776beaa6f4e1486471a5710d797846168521575c82635c3997af6f2161b0",
+                "runtimeId": "191eb02a7f9f7848799d8125cc97b53d55aa08c094ed81c4d44fd1b37d2eb7f8",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "7c83e1a9-7a1c-482c-a45c-05c44f6734c8",
+                        "privateIpv4Address": "172.30.222.105"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "256",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-10-09T19:50:36.990Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:milkman-url-shortener-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "512",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "shortener"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-10-09T19:50:54.705Z",
+        "pullStoppedAt": "2020-10-09T19:50:59.705Z",
+        "startedAt": "2020-10-09T19:51:01.705Z",
+        "startedBy": "ecs-svc/2055297821723454726",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/af9f8ddb60f843379320688fb54c70d8",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/milkman-url-shortener-prod:1",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "16d224c2-95ec-4722-b158-6f0a12f24a62",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0d2e9a838232e5cc1"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:2b:d6:80:6f:bc"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-142-33.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.142.33"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-19T11:32:00.421Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/ec709498-8bdb-45a2-8c4f-022f9fec68e0",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/b0f1594d2e5446ce9104d4e1a1a38a84",
+                "name": "routing",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/routing:stable",
+                "imageDigest": "sha256:1c10b90d58d7a6e8765cfab2692f56fe09c7f29755d902c836082ac03373bb46",
+                "runtimeId": "06fb5f6c3672c6473392418ef9f79d3e810eae8c8387b48c0ad4b69b9e9e397b",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "16d224c2-95ec-4722-b158-6f0a12f24a62",
+                        "privateIpv4Address": "172.30.142.33"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-11-19T11:31:50.894Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:routing-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "routing"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-19T11:32:08.744Z",
+        "pullStoppedAt": "2020-11-19T11:32:23.744Z",
+        "startedAt": "2020-11-19T11:32:42.273Z",
+        "startedBy": "ecs-svc/0147408439330757371",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/b0f1594d2e5446ce9104d4e1a1a38a84",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/routing-prod:8",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "30a648a5-b883-41aa-a955-7046efafe628",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-05f53636bf76bec2a"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:95:ec:69:1a:ba"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-163-140.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.163.140"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-09-23T02:00:42.315Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/95770142-9c89-4add-bb82-a77733c69d5c",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/b20ce11ef8c24921a593a9a2ad39cf5e",
+                "name": "invoicing",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/invoice:prod",
+                "imageDigest": "sha256:a48016ddcbaae845dcba13912191ceb09369412a5db3194cd80f492efb5f7616",
+                "runtimeId": "242cc9ea8fccc35b89e077846a4e98f0d72473ff9b90e0110c20420be4e8df13",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "30a648a5-b883-41aa-a955-7046efafe628",
+                        "privateIpv4Address": "172.30.163.140"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-09-23T02:00:31.960Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:invoicing-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "invoicing"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-09-23T02:00:52.573Z",
+        "pullStoppedAt": "2020-09-23T02:01:07.573Z",
+        "startedAt": "2020-09-23T02:01:17.573Z",
+        "startedBy": "ecs-svc/4795964236146295945",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/b20ce11ef8c24921a593a9a2ad39cf5e",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/invoicing-prod:2",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "bb69b98c-017a-4559-8236-2d921e259aad",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0bea64ed63dbd85ab"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:43:e4:c1:7d:b0"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-133-18.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.133.18"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-05-13T18:23:27.839Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/e3147c16-53f8-4634-b3e2-028ace7cc5ae",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/bf551d5219594ec78929947163ba0341",
+                "name": "ftp-output",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/ftp-output:prod",
+                "imageDigest": "sha256:e930d29ec674e55610c0ba6f48248910e69beca8be38605cb11e9799d4cf4105",
+                "runtimeId": "01681a848e7702fa356351d347c72f035ea61a3b98815c9f39d82ea55a2e72cc",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "bb69b98c-017a-4559-8236-2d921e259aad",
+                        "privateIpv4Address": "172.30.133.18"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "256",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-05-13T18:23:22.571Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:ftp-output-prod-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "512",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "ftp-output"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-05-13T18:23:40.492Z",
+        "pullStoppedAt": "2020-05-13T18:23:49.492Z",
+        "startedAt": "2020-05-13T18:23:54.492Z",
+        "startedBy": "ecs-svc/9223370460779413286",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/bf551d5219594ec78929947163ba0341",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/ftp-output:4",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "48b0f5a5-2363-4785-ae84-507e8db2292a",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0afbbe5cb6feb4649"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:f2:53:d1:f5:50"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-139-191.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.139.191"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-10T13:48:38.362Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/c5b3022f-f140-4cfa-84be-f73bacf18842",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/c03e653a8264477f9e500bb2691f6cce",
+                "name": "peer",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/transactor:prod-log",
+                "imageDigest": "sha256:5256f322341e18ed3a209493686da32fc17f34828b373c7fd7ce232f8b46f3db",
+                "runtimeId": "85cbc452efac9b022dd3bb36413c20706b18287b290c8ecd6ca0e3719c3b8cd6",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "48b0f5a5-2363-4785-ae84-507e8db2292a",
+                        "privateIpv4Address": "172.30.139.191"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "4096",
+                "memoryReservation": "12288"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-10T13:48:27.135Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:peer-server-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "peer"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-10T13:48:47.402Z",
+        "pullStoppedAt": "2020-11-10T13:49:03.402Z",
+        "startedAt": "2020-11-10T13:49:15.402Z",
+        "startedBy": "ecs-svc/4982713045771924778",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/c03e653a8264477f9e500bb2691f6cce",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/peer-server-prod:9",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "939902b3-a964-4055-a98a-1a017d8f42cd",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-06156e9713cd6bf4b"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:1d:6d:f7:25:2e"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-216-147.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.216.147"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-19T12:58:14.801Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/ea295849-473b-4f80-8698-dce8fc1951ca",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/c4ea500091ac48909fbf3cbff7f58883",
+                "name": "alerts",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/milkman-alerts:stable",
+                "imageDigest": "sha256:6ba425fcfce88bbe79e0d33b5f3470d7e414394f34ab74bee7282c0e19505a89",
+                "runtimeId": "30966756a00371d915de815ebefe6bdddd17aec520c9c352686fd8be0581d461",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "939902b3-a964-4055-a98a-1a017d8f42cd",
+                        "privateIpv4Address": "172.30.216.147"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "256",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-11-19T12:58:06.849Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:milkman-alerts-prod--fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "512",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "alerts"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-19T12:58:24.851Z",
+        "pullStoppedAt": "2020-11-19T12:58:31.851Z",
+        "startedAt": "2020-11-19T12:58:35.851Z",
+        "startedBy": "ecs-svc/0027419175937542336",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/c4ea500091ac48909fbf3cbff7f58883",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/milkman-alerts-prod:4",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "2bb43c50-72ad-424c-ae17-5fb1f353433e",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-01b66a5bf09fcc801"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-02f9d836f834993b7"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "0a:c5:96:77:d8:be"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-194-75.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.194.75"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1c",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-24T11:03:48.040Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/426c258c-fce6-445b-99e7-73ac39f4fd4d",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/cc3881cb378d4e4f9b4eaa8fcdcaa33a",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "0d1643a58286d6451c042d57b049ce05b02a87fccfe575e7e36abe9672d89494",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "2bb43c50-72ad-424c-ae17-5fb1f353433e",
+                        "privateIpv4Address": "172.30.194.75"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/c5b39513-ba46-4941-b144-696a331f51bb",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/cc3881cb378d4e4f9b4eaa8fcdcaa33a",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "2e4cbb56ef2b9d84f5534aa41233704d536f94e4505db075f29627d8cd3711d1",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "2bb43c50-72ad-424c-ae17-5fb1f353433e",
+                        "privateIpv4Address": "172.30.194.75"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/dc92f53e-57b9-4570-b696-12f1c241ff1a",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/cc3881cb378d4e4f9b4eaa8fcdcaa33a",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "90dd0839f00fab84e1d804df91d53260caf72d7779ca66e3257840c73eace94e",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "2bb43c50-72ad-424c-ae17-5fb1f353433e",
+                        "privateIpv4Address": "172.30.194.75"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-24T11:03:34.208Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-24T11:03:56.055Z",
+        "pullStoppedAt": "2020-11-24T11:04:23.055Z",
+        "startedAt": "2020-11-24T11:04:37.597Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/cc3881cb378d4e4f9b4eaa8fcdcaa33a",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 6
+    },
+    {
+        "attachments": [
+            {
+                "id": "763c89be-355b-4262-a7fc-81900c713543",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-04efb197359d41d10"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:e6:f4:54:db:36"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-132-82.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.132.82"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-19T13:35:30.177Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/a2421582-6824-47c0-824b-9ff9fae8e327",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/d007b1d4002543f1924145f4facdd9e9",
+                "name": "cdn",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/cdn:stable",
+                "imageDigest": "sha256:c06a8ef1ec85c451f8670223412e3b9e79035544830d672df6fa8ca92e13b145",
+                "runtimeId": "bd7273943f0ba8cd97d55e35329a3551fb4f6967539afc4718df305022929989",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "763c89be-355b-4262-a7fc-81900c713543",
+                        "privateIpv4Address": "172.30.132.82"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "256",
+                "memoryReservation": "1024"
+            }
+        ],
+        "cpu": "256",
+        "createdAt": "2020-11-19T13:35:18.652Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:cdn-prod-fargate-service",
+        "healthStatus": "UNKNOWN",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "1024",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "cdn"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-19T13:35:38.291Z",
+        "pullStoppedAt": "2020-11-19T13:35:44.291Z",
+        "startedAt": "2020-11-19T13:35:47.291Z",
+        "startedBy": "ecs-svc/8496916892713456338",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/d007b1d4002543f1924145f4facdd9e9",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/cdn-prod:7",
+        "version": 3
+    },
+    {
+        "attachments": [
+            {
+                "id": "3012d6ae-3d06-4493-b045-4c7e14739079",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-00283e5d85b4510a6"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:8b:6c:42:41:0e"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-152-147.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.152.147"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-24T11:03:46.043Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/11e597ad-38e4-4e45-958c-c79c17b9d0fa",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/de0edfa34dc44840b497966b5cfdc63f",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "b0896190d9b559d9fafb916d19afc6b0365700ceb1bdabf32755d80b9208c9fc",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "3012d6ae-3d06-4493-b045-4c7e14739079",
+                        "privateIpv4Address": "172.30.152.147"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/523c8da0-1771-4a67-a28d-80070ec45f6c",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/de0edfa34dc44840b497966b5cfdc63f",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "ca6a569bff0a23ff00731ae9cf05453682175615e914c52f7cc7eaf5a5ea8558",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "3012d6ae-3d06-4493-b045-4c7e14739079",
+                        "privateIpv4Address": "172.30.152.147"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/fd4c1778-9285-4595-aff5-e041e27d47be",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/de0edfa34dc44840b497966b5cfdc63f",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "f158b8755c4e1494b63c4fbfeea27d56b00f52952da1ce5e82f051f35460dc1d",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "3012d6ae-3d06-4493-b045-4c7e14739079",
+                        "privateIpv4Address": "172.30.152.147"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-24T11:03:34.208Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-24T11:03:54.463Z",
+        "pullStoppedAt": "2020-11-24T11:04:16.463Z",
+        "startedAt": "2020-11-24T11:04:36.292Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/de0edfa34dc44840b497966b5cfdc63f",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 6
+    },
+    {
+        "attachments": [
+            {
+                "id": "eb2094f7-f8c0-4d16-991d-2814cda89785",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-05a14f584c50b5082"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:ab:d6:64:62:b8"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-174-225.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.174.225"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-23T11:23:23.921Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/60c07662-9b80-4f24-adaa-0dc388648b8f",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/eb5a99e332834e9888eca88b6bf80796",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "eb4dc5c135d57eb4643054aa07a8c62c15fde12a31053f517a711e5e1ff78ccc",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "eb2094f7-f8c0-4d16-991d-2814cda89785",
+                        "privateIpv4Address": "172.30.174.225"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/ae85484d-6d40-43bb-b617-37ea9da711bf",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/eb5a99e332834e9888eca88b6bf80796",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "b313032eaf557c182d7aa7138477cef6cfbeb1bf7edb579af4dd74a19a521737",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "eb2094f7-f8c0-4d16-991d-2814cda89785",
+                        "privateIpv4Address": "172.30.174.225"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/cff5e1c6-0c98-4c48-bdf2-05df86499378",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/eb5a99e332834e9888eca88b6bf80796",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "5b91c9c406633714c57ad450e99434a3b2350b5e7a529f4b9aa44e863ac7fbbc",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "eb2094f7-f8c0-4d16-991d-2814cda89785",
+                        "privateIpv4Address": "172.30.174.225"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-23T11:23:16.173Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-23T11:23:33.074Z",
+        "pullStoppedAt": "2020-11-23T11:24:01.074Z",
+        "startedAt": "2020-11-23T11:24:14.847Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/eb5a99e332834e9888eca88b6bf80796",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 5
+    },
+    {
+        "attachments": [
+            {
+                "id": "de623891-18e4-401f-968c-5c211ab30017",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-066ca8d69172a69d5"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-0bb78c969a5d97edd"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "06:6b:60:5d:8f:ee"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-187-123.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.187.123"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1b",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-19T11:26:19.174Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/772f84ff-6763-43cc-809d-6af4f71c920f",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/ec6a142ec75e45ebbe0192d5de3e94a9",
+                "name": "convergence",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/convergence:stable",
+                "imageDigest": "sha256:acc4035b7c5cbb760b191dd1d7dd181faff5d2b2417dc9be6a1407993bb21412",
+                "runtimeId": "492cf57e36615e2a4cb3c180a08521283d7c7ba987d3e9fbd141873c85899181",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "de623891-18e4-401f-968c-5c211ab30017",
+                        "privateIpv4Address": "172.30.187.123"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "1024",
+                "memoryReservation": "2048"
+            }
+        ],
+        "cpu": "1024",
+        "createdAt": "2020-11-19T11:26:06.754Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:convergence-prod-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "2048",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "convergence"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-19T11:26:26.044Z",
+        "pullStoppedAt": "2020-11-19T11:26:44.044Z",
+        "startedAt": "2020-11-19T11:27:03.786Z",
+        "startedBy": "ecs-svc/2310541108942646434",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/ec6a142ec75e45ebbe0192d5de3e94a9",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/convergence-prod:3",
+        "version": 4
+    },
+    {
+        "attachments": [
+            {
+                "id": "e657b096-1d17-4d7b-95eb-9426e0596e35",
+                "type": "ElasticNetworkInterface",
+                "status": "ATTACHED",
+                "details": [
+                    {
+                        "name": "subnetId",
+                        "value": "subnet-054157c04f4cb771f"
+                    },
+                    {
+                        "name": "networkInterfaceId",
+                        "value": "eni-04462ec3a26cec9ef"
+                    },
+                    {
+                        "name": "macAddress",
+                        "value": "02:de:63:ed:45:e6"
+                    },
+                    {
+                        "name": "privateDnsName",
+                        "value": "ip-172-30-134-204.eu-central-1.compute.internal"
+                    },
+                    {
+                        "name": "privateIPv4Address",
+                        "value": "172.30.134.204"
+                    }
+                ]
+            }
+        ],
+        "availabilityZone": "eu-central-1a",
+        "clusterArn": "arn:aws:ecs:eu-central-1:263652615682:cluster/milkman-prod",
+        "connectivity": "CONNECTED",
+        "connectivityAt": "2020-11-23T22:59:37.104Z",
+        "containers": [
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/321b3e9b-78c0-4dd1-85e9-0762096caadb",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/f468149c52c24114b2bff3d4b7f6ddb6",
+                "name": "api_dashboard",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api-dashboard:stable",
+                "imageDigest": "sha256:3c748559cd5fd457f6c5d4e807c01f4934bb477c26d3e894f5d5066d9fa5e2f2",
+                "runtimeId": "eb6a82f9d9674f59d46a036fcf126c7c3e1eee0516b0144029ea8c979368ac5c",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "e657b096-1d17-4d7b-95eb-9426e0596e35",
+                        "privateIpv4Address": "172.30.134.204"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/3b555ddf-e1f3-4cb5-8590-044efb8bdc4d",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/f468149c52c24114b2bff3d4b7f6ddb6",
+                "name": "reverse",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/nginx-api:prod",
+                "imageDigest": "sha256:9368168e5e304a4482759d3647fdfacbcca21dc7173acaaf61bfac70fa0f19ab",
+                "runtimeId": "66cc0ffb2191a5eeba29fdcfabf16ebbf2434542974624954d98ac8462ea1130",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "e657b096-1d17-4d7b-95eb-9426e0596e35",
+                        "privateIpv4Address": "172.30.134.204"
+                    }
+                ],
+                "healthStatus": "UNKNOWN",
+                "cpu": "128",
+                "memoryReservation": "512"
+            },
+            {
+                "containerArn": "arn:aws:ecs:eu-central-1:263652615682:container/5f0ed524-71a8-4c07-9c82-fbd82d12e49d",
+                "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/f468149c52c24114b2bff3d4b7f6ddb6",
+                "name": "api",
+                "image": "263652615682.dkr.ecr.eu-central-1.amazonaws.com/milkman/api:stable",
+                "imageDigest": "sha256:314e6679d993709281b39acf5f2804a297974483c0337d6a1e0a375383978ee6",
+                "runtimeId": "41e83fca8cd2c90e3bc833d40269faae321d34473ee312c8d5360dcbdd36ab65",
+                "lastStatus": "RUNNING",
+                "networkBindings": [],
+                "networkInterfaces": [
+                    {
+                        "attachmentId": "e657b096-1d17-4d7b-95eb-9426e0596e35",
+                        "privateIpv4Address": "172.30.134.204"
+                    }
+                ],
+                "healthStatus": "HEALTHY",
+                "cpu": "3840",
+                "memoryReservation": "11264"
+            }
+        ],
+        "cpu": "4096",
+        "createdAt": "2020-11-23T22:59:26.513Z",
+        "desiredStatus": "RUNNING",
+        "group": "service:api-fargate-service",
+        "healthStatus": "HEALTHY",
+        "lastStatus": "RUNNING",
+        "launchType": "FARGATE",
+        "memory": "12288",
+        "overrides": {
+            "containerOverrides": [
+                {
+                    "name": "api_dashboard"
+                },
+                {
+                    "name": "api"
+                },
+                {
+                    "name": "reverse"
+                }
+            ],
+            "inferenceAcceleratorOverrides": []
+        },
+        "platformVersion": "1.3.0",
+        "pullStartedAt": "2020-11-23T22:59:45.036Z",
+        "pullStoppedAt": "2020-11-23T23:00:13.036Z",
+        "startedAt": "2020-11-23T23:00:26.624Z",
+        "startedBy": "ecs-svc/8988463519536942068",
+        "tags": [],
+        "taskArn": "arn:aws:ecs:eu-central-1:263652615682:task/milkman-prod/f468149c52c24114b2bff3d4b7f6ddb6",
+        "taskDefinitionArn": "arn:aws:ecs:eu-central-1:263652615682:task-definition/api-prod:28",
+        "version": 4
+    }
+],
+    "failures": []
+}
